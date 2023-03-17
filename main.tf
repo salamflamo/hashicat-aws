@@ -180,6 +180,7 @@ resource "null_resource" "configure-cat-app" {
       private_key = tls_private_key.hashicat.private_key_pem
       host        = aws_eip.hashicat.public_ip
     }
+  }
 }
 
 resource "tls_private_key" "hashicat" {
